@@ -75,7 +75,7 @@
 
 ### To Do List
 - [x] Make initial commit
-- [ ] Update README.md (Template can be found here: [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+- [ ] Update README.md. The used template can be found here: [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 - [ ] Add support of text reviews
 - [ ] Implement automatic feature detection
 - [ ] Implement automatic descriptive words detection
