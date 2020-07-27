@@ -73,6 +73,13 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com). -->
 
+### To Do List
+- [x] Make initial commit
+- [ ] Update README.md (Template can be found here: [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+- [ ] Add support of text reviews
+- [ ] Implement automatic feature detection
+- [ ] Implement automatic descriptive words detection
+
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
 
 Here's why:
