@@ -73,15 +73,6 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com). -->
 
-### To Do List
-- [x] Make initial commit
-- [x] Add comments to the functions
-- [ ] Update README.md. The used template can be found here: [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-- [x] Add support of text reviews
-- [ ] Implement JSON input for key words, sets of URLs
-- [ ] Implement JSON input for dictionaries of scores
-- [ ] Implement automatic feature detection
-- [ ] Implement automatic descriptive words detection
 
 Once upon a time I realized that if you want to get objective information about some product, you have to spend a vast amount of time reading and watching reviews to distill valuable facts. The tool that I am trying to implement provides quantative assessment for a feature of products.
 
@@ -94,6 +85,16 @@ What will you get?
 * The comparative quantified asessment of products by their feature/features
 
 Of course, there's a lot to do to calibrate the model but even now I get the results pretty close to expected.
+
+### To Do List
+- [x] Make initial commit
+- [x] Add comments to the functions
+- [ ] Update README.md. The used template can be found here: [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+- [x] Add support of text reviews
+- [ ] Implement JSON input for key words, sets of URLs
+- [ ] Implement JSON input for dictionaries of scores
+- [ ] Implement automatic feature detection
+- [ ] Implement automatic descriptive words detection
 
 ### Built With
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
@@ -173,7 +174,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Ilia Notin - [@your_twitter](https://twitter.com/your_username) - notin13@gmail.com
+Ilia Notin - notin13@gmail.com
 
 Project Link: [https://github.com/inotin/reviewAnalyzer](https://github.com/inotin/reviewAnalyzer)
 
@@ -190,13 +191,13 @@ Project Link: [https://github.com/inotin/reviewAnalyzer](https://github.com/inot
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[contributors-url]: https://github.com/inotin/reviewAnalyzer/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-url]: https://github.com/inotin/reviewAnalyzer/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://github.com/inotin/reviewAnalyzer/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://github.com/inotin/reviewAnalyzer/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
