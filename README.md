@@ -89,19 +89,22 @@ Of course, there's a lot to do to calibrate the model but even now I get the res
 ### To Do List
 - [x] Make initial commit
 - [x] Add comments to the functions
-- [ ] Update README.md. The used template can be found here: [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-- [x] Add support of text reviews
-- [ ] Implement JSON input for key words, sets of URLs
-- [ ] Implement JSON input for dictionaries of scores
+- [x] Implement semantic analysis using Vader
+- [ ] Update README.md.
+- [ ] Weird things are going on with p-values. Recheck the corresponding function
+- [ ] Implement JSON output for results
 - [ ] Implement automatic feature detection
-- [ ] Implement automatic descriptive words detection
+- [ ] Add support of text reviews
+
 
 ### Built With
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
 * [Laravel](https://laravel.com)
-
+* [youtube_transcript_api](https://pypi.org/project/youtube-transcript-api/)
+* [youtube-search-python](https://pypi.org/project/youtube-search-python/)
+* [NLTK](https://www.nltk.org)
 
 
 <!-- GETTING STARTED -->
@@ -114,7 +117,7 @@ This is an example of how to list things you need to use the software and how to
 ```sh
 pip install youtube_transcript_api
 pip install bs4
-pip install nltk 
+pip install nltk
 ```
 
 ### Installation
