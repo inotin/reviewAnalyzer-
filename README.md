@@ -77,14 +77,14 @@
 Once upon a time I realized that if you want to get objective information about some product, you have to spend a vast amount of time reading and watching reviews to distill valuable facts. The tool that I am trying to implement provides quantative assessment for a feature of products.
 
 What are the inputs?
-* Set of URLs for a group of products
-* Key words for the feature/features
+* Product names
+* Important features you would like to  compare
 
 That's it!
 What will you get?
-* The comparative quantified asessment of products by their feature/features
+* The comparative quantified assessment of products by their feature/features
 
-Of course, there's a lot to do to calibrate the model but even now I get the results pretty close to expected.
+Of course, there's a lot to do to calibrate the model but I get the results pretty close to expected.
 
 ### To Do List
 - [x] Make initial commit
@@ -95,13 +95,11 @@ Of course, there's a lot to do to calibrate the model but even now I get the res
 - [ ] Implement JSON output for results
 - [ ] Implement automatic feature detection
 - [ ] Add support of text reviews
+- [ ] Adapt source files for use as a library
 
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+
 * [youtube_transcript_api](https://pypi.org/project/youtube-transcript-api/)
 * [youtube-search-python](https://pypi.org/project/youtube-search-python/)
 * [NLTK](https://www.nltk.org)
