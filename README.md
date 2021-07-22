@@ -70,7 +70,7 @@
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com). -->
 
 
-Once upon a time I realized that if you want to get objective information about some product, you have to spend a vast amount of time reading and watching reviews to distill valuable facts. The tool that I am trying to implement provides quantative assessment for a feature of products.
+Once upon a time I realized that if you want to get objective information about some product, you have to spend a vast amount of time reading and watching reviews to distill valuable facts. The tool that I am trying to implement provides quantitative assessment for a feature of products.
 
 What are the inputs?
 * Product names
@@ -86,12 +86,11 @@ Of course, there's a lot to do to calibrate the model but I get the results pret
 - [x] Make initial commit
 - [x] Add comments to the functions
 - [x] Implement semantic analysis using Vader
-- [ ] Update README.md.
-- [ ] Weird things are going on with p-values. Recheck the corresponding function
+- [x] Update README.md.
+- [x] Weird things are going on with p-values. Recheck the corresponding function
 - [ ] Implement JSON output for results
-- [ ] Implement automatic feature detection
+- [ ] Implement automatic keywords detection
 - [ ] Add support of text reviews
-- [ ] Adapt source files for use as a library
 
 
 ### Built With
@@ -99,7 +98,7 @@ Of course, there's a lot to do to calibrate the model but I get the results pret
 * [youtube_transcript_api](https://pypi.org/project/youtube-transcript-api/)
 * [youtube-search-python](https://pypi.org/project/youtube-search-python/)
 * [NLTK](https://www.nltk.org)
-* [DeepSegment] (https://pypi.org/project/deepsegment/)
+* [DeepSegment](https://pypi.org/project/deepsegment/)
 
 
 <!-- GETTING STARTED -->
@@ -125,14 +124,14 @@ pip install -r requirements.txt
 ```
 4. Run the script providing product names and keywords separated by ';'
 ```sh
-python3 reviewlyzer.py 'iphone 11 pro;google pixel 5' 'screen;camera'
+python3 reviewlyzer.py 'iphone 11 pro;google pixel 5;google pixel 4a' 'screen;camera;battery;materials'
 ```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 Run the script providing product names and keywords separated by ';'
 ```sh
-python3 reviewlyzer.py 'iphone 11 pro;google pixel 5' 'screen;camera'
+python3 reviewlyzer.py 'iphone 11 pro;google pixel 5;google pixel 4a' 'screen;camera;battery;materials'
 ```
 
 The script generates html files with tables and plots and saves them into results/ folder for further use e.g., embed into iframes as it's done on [my website](https://notin.it/reviewlyzer)
