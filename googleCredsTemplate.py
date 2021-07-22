@@ -1,0 +1,5 @@
+GOOGLE_API_KEY = "Your_data"
+GOOGLE_CLIENT_ID = "Your_data"
+GOOGLE_SECRET_KEY = "Your_data"
+GOOGLE_API_KEY2="Your_data"
+GOOGLE_CX = "Your_data"

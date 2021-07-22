@@ -54,3 +54,10 @@ geckodriver.log
 
 # copied changelog
 docs/source/changelog.md
+
+#credentials
+googleCreds.py
+
+#venv
+reviewlyzerenv
+false

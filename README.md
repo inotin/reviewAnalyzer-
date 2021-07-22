@@ -29,23 +29,19 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/inotin/reviewlyzer">
+    <img src="images/logo.png" alt="Logo" height="80">
   </a>
-
-  <h3 align="center">Review Analyzer</h3>
 
   <p align="center">
     A tool for a quantitative assessment of reviews of products inculding YouTube videos
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/inotin/reviewAnalyzer">View Demo</a>
+    <a href="https://github.com/inotin/reviewlyzer">View Demo</a>
     ·
-    <a href="https://github.com/inotin/reviewAnalyzer/issues">Report Bug</a>
+    <a href="https://github.com/inotin/reviewlyzer/issues">Report Bug</a>
     ·
-    <a href="https://github.com/inotin/reviewAnalyzer/issues">Request Feature</a>
+    <a href="https://github.com/inotin/reviewlyzer/issues">Request Feature</a>
   </p>
 </p>
 
@@ -103,6 +99,7 @@ Of course, there's a lot to do to calibrate the model but I get the results pret
 * [youtube_transcript_api](https://pypi.org/project/youtube-transcript-api/)
 * [youtube-search-python](https://pypi.org/project/youtube-search-python/)
 * [NLTK](https://www.nltk.org)
+* [DeepSegment] (https://pypi.org/project/deepsegment/)
 
 
 <!-- GETTING STARTED -->
@@ -110,45 +107,57 @@ Of course, there's a lot to do to calibrate the model but I get the results pret
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* youtube_transcript_api
+All necessary packages are listed in requirements.txt and can be installed as follows
 ```sh
-pip install youtube_transcript_api
-pip install bs4
-pip install nltk
+pip install -r requirements.txt
 ```
+In case you face issues with keras package, uninstall keras and keras-nightly and reinstall keras again.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone https://github.com/inotin/reviewlyzer.git
 ```
-3. Install NPM packages
+3. Install necessary packages
 ```sh
-npm install
+pip install -r requirements.txt
 ```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
+4. Run the script providing product names and keywords separated by ';'
+```sh
+python3 reviewlyzer.py 'iphone 11 pro;google pixel 5' 'screen;camera'
 ```
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+Run the script providing product names and keywords separated by ';'
+```sh
+python3 reviewlyzer.py 'iphone 11 pro;google pixel 5' 'screen;camera'
+```
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+The script generates html files with tables and plots and saves them into results/ folder for further use e.g., embed into iframes as it's done on [my website](https://notin.it/reviewlyzer)
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+The generated files are:
+* reviewlyzerResults - a table with scores for each keyword and mean values for each product as well as product images found with Google Image search
 
+<img src="images/reviewlyzerResults.png" alt="reviewlyzerResults" width="100%">
 
+* reviewlyzerPvalues - a table with pairwise scores of products with corresponding p-values (with a given threshold of 0.15)
+<img src="images/reviewlyzerPvalues.png" alt="reviewlyzerPvalues" width="100%">
+
+* reviewlyzerHistograms - a plot with distributions of scores for each product
+<img src="images/reviewlyzerHistograms.png" alt="reviewlyzerHistograms" width="100%">
+
+* reviewlyzerBoxPlots - a plot with boxplots of scores for each product
+<img src="images/reviewlyzerBoxPlots.png" alt="reviewlyzerBoxPlots" width="100%">
+
+* reviewlyzerBarPlots - a bar plot with bar plots of scores for each product including mean scores
+<img src="images/reviewlyzerBarPlots.png" alt="reviewlyzerBarPlots" width="100%">
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/inotin/reviewAnalyzer/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/inotin/reviewlyzer/issues) for a list of proposed features (and known issues).
 
 
 
@@ -175,9 +184,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Ilia Notin - notin13@gmail.com
+Ilia Notin - ilia@notin.it
 
-Project Link: [https://github.com/inotin/reviewAnalyzer](https://github.com/inotin/reviewAnalyzer)
+Project Link: [https://github.com/inotin/reviewlyzer](https://github.com/inotin/reviewlyzer)
 
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -189,18 +198,20 @@ Project Link: [https://github.com/inotin/reviewAnalyzer](https://github.com/inot
 
 
 
+
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/inotin/reviewAnalyzer.svg?style=flat-square
-[contributors-url]: https://github.com/inotin/reviewAnalyzer/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/inotin/reviewAnalyzer.svg?style=flat-square
-[forks-url]: https://github.com/inotin/reviewAnalyzer/network/members
-[stars-shield]: https://img.shields.io/github/stars/inotin/reviewAnalyzer.svg?style=flat-square
-[stars-url]: https://github.com/inotin/reviewAnalyzer/stargazers
-[issues-shield]: https://img.shields.io/github/issues/inotin/reviewAnalyzer.svg?style=flat-square
-[issues-url]: https://github.com/inotin/reviewAnalyzer/issues
-[license-shield]: https://img.shields.io/github/license/inotin/reviewAnalyzer.svg?style=flat-square
-[license-url]: https://github.com/inotin/reviewAnalyzer/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/inotin/reviewlyzer.svg?style=flat-square
+[contributors-url]: https://github.com/inotin/reviewlyzer/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/inotin/reviewlyzer.svg?style=flat-square
+[forks-url]: https://github.com/inotin/reviewlyzer/network/members
+[stars-shield]: https://img.shields.io/github/stars/inotin/reviewlyzer.svg?style=flat-square
+[stars-url]: https://github.com/inotin/reviewlyzer/stargazers
+[issues-shield]: https://img.shields.io/github/issues/inotin/reviewlyzer.svg?style=flat-square
+[issues-url]: https://github.com/inotin/reviewlyzer/issues
+[license-shield]: https://img.shields.io/github/license/inotin/reviewlyzer.svg?style=flat-square
+[license-url]: https://github.com/inotin/reviewlyzer/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/inotin/
 [product-screenshot]: images/screenshot.png

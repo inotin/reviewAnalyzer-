@@ -1,3 +1,4 @@
+#Words used for semantic analysis
 veryWords = ["absolutely",
 "awfully",
 "certainly",
