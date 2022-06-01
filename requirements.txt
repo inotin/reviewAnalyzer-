@@ -28,7 +28,7 @@ h5py==3.1.0
 html2image==2.0.1
 httpcore==0.13.6
 httplib2==0.19.1
-httpx==0.18.2
+httpx==0.23.0
 idna==3.2
 ipython==7.25.0
 ipython-genutils==0.2.0
